@@ -3,7 +3,7 @@
  
 
 <h2>Description</h2>
-These projects consists of creating an Azure account and deploying Microsoft Sentinel Training Lab Solution and Splunk Enterprise. 
+These projects consists of creating an Azure account and deploying SIEMs. First, I will deploy Microsoft Sentinel Training Lab Solution and ingest sample logs. I show alerts on the dashboard and go through the investigation using playbooks. For my second project, I set up Splunk Enterprise on Linux.
 <br />
 
 
@@ -16,6 +16,10 @@ Create Free Azure Account: <br/>
 <br />
 <br />
 <p align="center">
+ Microsoft Sentinel Training Lab Solution: <br/>
+<img src=
+<br />
+<br />
 Deploying Splunk Enterprise: <br/>
 <img src=
 <br />
