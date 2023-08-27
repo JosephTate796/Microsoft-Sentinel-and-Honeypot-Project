@@ -20,7 +20,7 @@ Create Free Azure Account: <br/>
 <img src=
 <br />
 <br />
-Deploying Splunk Enterprise: <br/>
+Deploying Splunk Enterprise Linux: <br/>
 <img src=
 <br />
 <br />
