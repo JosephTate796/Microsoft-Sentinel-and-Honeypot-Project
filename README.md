@@ -11,32 +11,32 @@ This home lab project consist of creating an Azure virtual machine as a honeypot
 <h2>Home Lab Details and Pics:</h2>
 
 <p align="center">
-Create Free Azure Account: <br/>
+Microsoft Sentinel <br/>
 <img src=
 <br />
 <br />
 <p align="center">
- Microsoft Sentinel Training Lab Solution: <br/>
+World map of brute-force attacks: <br/>
 <img src=
 <br />
 <br />
-Deploying Splunk Enterprise Linux: <br/>
+Powershell Script ran in VM and results. The results were sent to a saved file on the VM: <br/>
 <img src=
 <br />
 <br />
-Ingesting Logs:  <br/>
+Query ran in Sentinel and results. You can see the attackers IP address and the usernames used during the attack:  <br/>
 <img src=
 <br />
 <br />
-Alerts: <br/>
+Query: <br/>
 <img src=
 <br />
 <br />
-Incidents:  <br/>
+Query:  <br/>
 <img src=
 <br />
 <br />
-Investigation:  <br/>
+Alerts:  <br/>
 <img src=
 <br />
 <br />
