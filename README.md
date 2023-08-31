@@ -11,25 +11,34 @@ This home lab project consist of creating an Azure virtual machine as a honeypot
 <h2>Home Lab Details and Pics:</h2>
 
 <p align="center">
-Microsoft Sentinel <br/>
+Microsoft Sentinel Incident screenshot. (Please escuse the misspelling of Logons) I created an alert rule for the failed logons. <br/>
 <img src="https://i.imgur.com/pVuS4gC.png"
+<br />
+<br />
+<br />
 <br />
 <br />
 <p align="center">
 World map of brute-force attacks: <br/>
-<img src=
+<img src="https://i.imgur.com/vvzyLEb.png"
+<br />
+<br />
+<br />
 <br />
 <br />
 Powershell Script ran in VM and results. The results were sent to a saved file on the VM: <br/>
-<img src=
+<img src="https://i.imgur.com/C7xlB9i.png"
 <br />
 <br />
-Query ran in Sentinel and results. You can see the attackers IP address and the usernames used during the attack:  <br/>
-<img src=
 <br />
 <br />
-Query: <br/>
-<img src=
+<br />
+Query ran in Sentinel and results. You can see the attackers IP address, location, and the usernames used during the attack:  <br/>
+<img src="https://i.imgur.com/OqlKLR1.png"
+<br />
+<br />
+Event Viewer on the VM showing EventID: 4625 in the security logs. This EventID is for failed logons. These are saved on the VM and sent to Sentinel. This E <br/>
+<img src="https://i.imgur.com/7xUyjNt.png"
 <br />
 <br />
 Query:  <br/>
