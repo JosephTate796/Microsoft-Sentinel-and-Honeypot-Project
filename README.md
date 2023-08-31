@@ -12,7 +12,7 @@ This home lab project consist of creating an Azure virtual machine as a honeypot
 
 <p align="center">
 Microsoft Sentinel <br/>
-<img src=
+<img src="https://i.imgur.com/pVuS4gC.png"
 <br />
 <br />
 <p align="center">
