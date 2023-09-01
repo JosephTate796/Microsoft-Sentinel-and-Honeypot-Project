@@ -45,6 +45,9 @@ Query ran in Sentinel and results. You can see the attackers IP address, locatio
 <img src="https://i.imgur.com/OqlKLR1.png"
 <br />
 <br />
+<br />
+<br />
+<br />
 Event Viewer from the VM showing EventID: 4625 in the security logs. This EventID is for failed logons. These are saved on the VM and sent to Sentinel. This E <br/>
 <img src="https://i.imgur.com/7xUyjNt.png"
 <br />
@@ -52,7 +55,7 @@ Event Viewer from the VM showing EventID: 4625 in the security logs. This EventI
 <br />
 <br />
 <br />
-:  <br/>
+This pic shows I assigned the incident to myself. 
 <img src="https://i.imgur.com/PqoHVGW.png"
 <br />
 <br />
