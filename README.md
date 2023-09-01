@@ -34,7 +34,7 @@ World map of brute-force attacks: <br/>
 <br />
 <br />
 <br />
-Powershell Script ran in VM and results. I got the script from Josh Madakor. The results were sent to a saved file on the VM: <br/>
+Powershell Script ran in VM and results. I got the script from Josh Madakor. The results were sent to a saved file on the VM and pulled i to Azure: <br/>
 <img src="https://i.imgur.com/C7xlB9i.png"
 <br />
 <br />
