@@ -3,7 +3,7 @@
  
 
 <h2>Description</h2>
-This home lab project consist of creating an Azure virtual machine and setting it up as a honeypot to see how often the machine would be brute-forced. I created an allow all rule in the firewall to make it discoverable to the public internet and turned off Windows Firewall on the VM. I created a log analytic workspace and connected it to the VM. I setup Azure Sentinel and connected it to the log analytic workspace. I enabled gathering VM logs in Microsoft Defender for the Cloud. I used a powershell script to run in background of the VM to collect failed logon attempts from Event Viewer. I'm able to see IP addresses, geolocation data and the usernames used during attacks. The collected data is saved in a file on the VM and pulled into the log analytic workspace. I ran a query in Sentinal to pull failed logon attempts in the log and created a map to show where the attacks were coming from.
+This home lab project consist of setting up Microsoft Sentinel and an Azure Virtual Machine. I set the VM as a honeypot to see live attacks and how often the machine would be brute-forced. I created an allow all rule in the firewall to make it discoverable to the public internet and turned off Windows Firewall on the VM. I connected the VM to my log analytic workspace. I used a powershell script to run in background of the VM to collect failed logon attempts from Event Viewer. I'm able to see IP addresses, geolocation data and the usernames used during attacks. The collected data is saved in a file on the VM and pulled into the log analytic workspace. I ran a query in Sentinal to pull failed logon attempts in the log and created a map to show where the attacks were coming from.
 <br />
 
 
@@ -31,41 +31,49 @@ Microsoft Sentinel Incident View. I created an alert rule for the failed logons.
 <p align="center">
 <br/>
 <img src="https://i.imgur.com/vvzyLEb.png" <br />
-World map of brute-force attacks locations. This map was created in workbook using the geolocation data pulled from the Powershell Script. 
+<img src="https://i.imgur.com/V5DYu9C.png" <br />
+World maps of brute-force attack locations. These maps was created in workbook using the geolocation data pulled from the Powershell Script. 
 <br />
 <br />
 <br />
 <br />
 <br />
-<br/>
-<img src="https://i.imgur.com/C7xlB9i.png" <br />
-Powershell Script ran on the VM and results. The PowerShell script extracts metadata from Windows Event Viewer and forwards it to a third party API to get geolacation data from attacks. I made an account on ipgeolocation.io to receive an API key. The API key needs to be added to the PowerShell script so you can get geolocation. The events are saved in a file on the VM and sent to Azure. Event Viewer shows EventID 4625. This ID indicates an account failed to logon.
+<img src="https://i.imgur.com/sgM3HeJ.png" <br />
 <br />
-<br />
-<img src="https://i.imgur.com/7xUyjNt.png"
+Bar chart of attack locations. The Netherlands leading the attacks at the time the chart was created. <bf />
 <br />
 <br />
 <br />
 <br />
 <br />
-Query ran in Sentinel and results. You can see the attackers IP address, location, and the usernames used during the attack:  <br/>
-<img src="https://i.imgur.com/OqlKLR1.png"
+<img src="https://i.imgur.com/C7xlB9i.png"
+<br />
+<br />
+<img src="https://i.imgur.com/7xUyjNt.png" <br />
+<br />
+Powershell script ran on the VM and results. The PowerShell script extracts metadata from Windows Event Viewer and forwards it to a third party API to get geolacation data from attacks. I made an account on ipgeolocation.io to receive an API key. The API key needs to be added to the PowerShell script so you can get geolocation. The events are saved in a file on the VM and sent to Azure. Event Viewer shows EventID 4625. This ID indicates an account failed to logon.
 <br />
 <br />
 <br />
 <br />
 <br />
-This pic shows I assigned the incident to myself. 
-<img src="https://i.imgur.com/PqoHVGW.png"
+<img src="https://i.imgur.com/OqlKLR1.png" <br />
+<img src="https://i.imgur.com/5WAke6O.png" <br />
+Query ran in Sentinel and results. You can see the attackers IP address, location, and the usernames used during the attack
 <br />
 <br />
-
- <!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+<br />
+<br />
+<br />
+<img src="https://i.imgur.com/el7m89z.png" <br />
+I created a rule to create an incident on Failed RDP Logons.
+<br />
+<br />
+<br />
+<br />
+<br />
+<img src="https://i.imgur.com/PqoHVGW.png" <br />
+<br />
+This pic shows me assigning the incident to myself. You will do this working as a Security Analyst in a SOC before investigating them.
+<br />
+<br />
