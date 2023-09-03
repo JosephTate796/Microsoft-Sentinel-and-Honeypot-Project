@@ -32,7 +32,7 @@ Microsoft Sentinel Incident View. I created an alert rule for the failed logons.
 <br/>
 <img src="https://i.imgur.com/vvzyLEb.png" <br />
 <img src="https://i.imgur.com/V5DYu9C.png" <br />
-World maps of brute-force attack locations. These maps was created in workbook using the geolocation data pulled from the Powershell Script. 
+World maps of brute-force attack locations. These maps were created in workbook using the geolocation data pulled from the Powershell Script. 
 <br />
 <br />
 <br />
