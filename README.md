@@ -51,7 +51,7 @@ Bar chart of attack locations. The Netherlands leading the attacks at the time t
 <br />
 <img src="https://i.imgur.com/7xUyjNt.png" <br />
 <br />
-Powershell script ran on the VM and results. The PowerShell script extracts metadata from Windows Event Viewer and forwards it to a third party API to get geolacation data from attacks. I made an account on ipgeolocation.io to receive an API key. The API key needs to be added to the PowerShell script so you can get geolocation. The events are saved in a file on the VM and sent to Azure. Event Viewer shows EventID 4625. This ID indicates an account failed to logon.
+Powershell script ran on the VM and results. The PowerShell script extracts metadata from Windows Event Viewer and forwards it to a third party API to get geolocation data from attacks. I made an account on ipgeolocation.io to receive an API key. The API key needs to be added to the PowerShell script so you can get geolocation. The events are saved in a file on the VM and sent to Azure. Event Viewer shows EventID 4625. This ID indicates an account failed to logon.
 <br />
 <br />
 <br />
