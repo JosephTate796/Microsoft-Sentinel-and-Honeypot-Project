@@ -3,7 +3,7 @@
  
 
 <h2>Description</h2>
-This home lab project consist of setting up Microsoft Sentinel and an Azure Virtual Machine. I set the VM as a honeypot to see live attacks and how often the machine would be brute-forced. I created an allow all rule in the firewall to make it discoverable to the public internet and turned off Windows Firewall on the VM. I connected the VM to my log analytic workspace. I used a PowerShell script to run in background of the VM to collect failed logon attempts. I'm able to see IP addresses, geolocation data and the usernames used during attacks. The collected data is saved in a file on the VM and pulled into the log analytic workspace. I ran a query in Sentinal to pull failed logon attempts in the log and created a map to show where the attacks were coming from.
+This home lab project consist of setting up Microsoft Sentinel and an Azure Virtual Machine. I set the VM as a honeypot to see live attacks and how often the machine would be brute-forced. I created an allow all rule in the firewall to make it discoverable to the public internet and turned off Windows Firewall on the VM. I connected the VM to my log analytic workspace. I used a PowerShell script to run in background of the VM to collect failed logon attempts and get the attackers geolocation. I'm able to see IP addresses, geolocation data and the usernames used during attacks. The collected data is saved in a file on the VM and pulled into the log analytic workspace. I ran a query in Sentinal to pull failed logon attempts in the log and created a map to show where the attacks were coming from.
 <br />
 
 
